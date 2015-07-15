@@ -5,13 +5,14 @@ int main(void)
 	char file_name[10];
 	char s[20];
 	FILE *fpr;
-	printf("ƒtƒ@ƒCƒ‹–¼“ü—Í-->");
+	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n") //æ”¹è¡ŒãŠã™ã™ã‚
+	printf("ãƒ•ã‚¡ã‚¤ãƒ«åå…¥åŠ›-->");
 	scanf("%s",file_name);
 	sprintf(file_path,"Z:\\c1\\%s",file_name);
 	fpr = fopen(file_path,"r");
 	if(fpr != NULL)
 	{
-		printf("ƒtƒ@ƒCƒ‹‚Í’Êí‚ÉŠJ‚¯‚Ü‚µ‚½\n");
+		printf("ãƒ•ã‚¡ã‚¤ãƒ«ã¯é€šå¸¸ã«é–‹ã‘ã¾ã—ãŸ\n");
 		while(fgets(s,5,fpr) != NULL)
 		{
 			printf("%s",s);
@@ -22,7 +23,7 @@ int main(void)
 	}
 	else
 	{
-		printf("ƒtƒ@ƒCƒ‹‚ÍŠJ‚¯‚Ä‚È‚¢‚æ\n");
+		printf("ãƒ•ã‚¡ã‚¤ãƒ«ã¯é–‹ã‘ã¦ãªã„ã‚ˆ\n");
 	}
 	fclose(fpr);
 	return 0;
