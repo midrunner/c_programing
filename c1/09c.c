@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main(void)
+{
+	char moji[30];
+	int n;
+	int su = 0;
+	int hoka = 0;
+	
+	printf("ï∂éöóÒì¸óÕ-->");
+	scanf("%30s",moji);
+	
+	for(n = 0; moji[n] != '\0';n++)
+	{
+		if(isdigit(moji[n]))
+		{
+			su++;
+		}
+		else
+		{
+			hoka++;
+		}
+	}
+	printf("êîéö:%d\n",su);
+	printf("ÇªÇÃëº:%d\n",hoka);
+	return 0;
+}

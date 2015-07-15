@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=shift_jis">
+<title>CPad Suite 共通マニュアル</title>
+</head>
+<body>
+<p align="right"><a href="cpad_side.html" target="cpad_manual_side">Index</a></p>
+<h2>メニュー説明</h2>
+<ul>
+  <a name="cpad_menu_file">
+  <li><strong>[ファイル(F)]</strong>
+	<ul>
+	  <li><strong>[新規作成(N)] Ctrl+N</strong><br>
+	    新しいエディタを開きます。<br>
+	    <br>
+	  <li><strong>[ファイルを開く(O)] Ctrl+O</strong><br>
+	    「ファイルを開く」ダイアログボックスを表示します。<br>
+	    <br>
+	  <li><strong>[上書き保存(S)] Ctrl+S</strong><br>
+	    アクティブなエディタのファイルを上書き保存します。<br>
+	    <br>
+	    
+	  <li><strong>[名前を付けて保存(A)]</strong><br>
+	    ファイルに名前を付けて保存します。<br>
+	    <br>
+	  <li><strong>[すべて保存(V)]</strong><br>
+	    開いているファイルすべてを[上書き保存]します。<br>
+	    <br>
+	  <li><strong>[文字コードを指定して保存(U)]</strong><br>
+	    文字コード(Shift-JIS/EUC-JP/JIS)・改行コード(CRLF/LF/CR)を指定してファイルを保存します。<br>
+	    <br>
+	  <li><strong>[ドキュメントを閉じる(D)]</strong><br>
+	    アクティブなエディタを閉じます。左右分割などで同じファイルを開いているエディタがある場合はそれらも閉じます。<br>
+	    <br>
+	  <li><strong>[エディタを閉じる(Q)] Ctrl+F4</strong><br>
+	    アクティブなエディタを閉じます。<br>
+	    <br>
+	  <li><strong>[すべて閉じる(Q)]</strong><br>
+	    現在開いているファイルをすべて閉じます。<br>
+	    <br>
+	  <li><strong>[印刷・印刷プレビュー(P)] Ctrl+P</strong><br>
+	    ファイルを印刷します。印刷プレビューもできます。<br>
+	    <br>
+	  <li><strong>[最近開いたファイル(R)]</strong><br>
+	    最近開いたファイルの履歴を表示します。<br>
+	    <br>
+	  <li><strong>[終了(X)] Alt+F4</strong><br>
+	    CPadを終了します。<br>
+	    <br>
+	</ul>
+  <a name="cpad_menu_edit">
+  <li><strong>[編集(E)]</strong>
+	<ul>
+	  <li><strong>[元に戻す(U)] Ctrl+Z</strong><br>
+	    直前に行った編集作業を取り消します。<br>
+	    <br>
+	  <li><strong>[やり直し(R)] Shift+Ctrl+Z</strong><br>
+	    直前の[元に戻す]を取り消します。<br>
+	    <br>
+	  <li><strong>[切り取り(T)] Ctrl+X</strong><br>
+	    選択しているテキストをクリップボードにコピーしてから削除します。<br>
+	    <br>
+	  <li><strong>[コピー(C)] Ctrl+C</strong><br>
+	    選択しているテキストをクリップボードにコピーします。<br>
+	    <br>
+	  <li><strong>[貼り付け(P)] Ctrl+V</strong><br>
+	    クリップボードのテキストをカーソル位置に挿入します。<br>
+	    <br>
+	  <li><strong>[削除(D)]</strong><br>
+	    選択しているテキストを削除します<br>
+	    <br>
+	  <li><strong>[変更禁止(Y)]</strong><br>
+	    現在アクティブなエディタの[編集禁止][編集可能]を切り替えます。<br>
+	    変更禁止の場合、間違ってファイルを書き換えてしまう事がなくなります。<br>
+	    <br>
+	  <li><strong>[すべて変更禁止(U)]</strong><br>
+	    [変更禁止モード]のON/OFFを切り替えます。[変更禁止モード]に移行した時点で開いているファイルの編集がすべて禁止され、
+	    新たに開くファイルも[変更禁止]状態で開きます。<br>
+	    <br>
+	  <li><strong>[すべて選択(A)] Ctrl+A</strong><br>
+	    アクティブなエディタの全テキストを選択します。<br>
+	    <br>
+	</ul>
+  <a name="cpad_menu_view">
+  <li><strong>[表示(V)]</strong>
+	<ul>
+	  <li><strong>[ツールバー(T)]</strong><br>
+	    <ul>
+	      <li><strong>[ファイル(F)]</strong>
+	      <li><strong>[編集(E)]</strong>
+	      <li><strong>[検索(S)]</strong>
+	      <li><strong>[実行(R)]</strong>
+	      <li><strong>[コマンドバー(C)]</strong><br>
+	       各ツールバーの表示・非表示を切り替えます。<br>
+	       <br>
+	      <li><strong>[全体(A)]</strong><br>
+	      ツールバー全体の表示・非表示を切り替えます。<br>
+	      <br>
+	    </ul>
+	  <li><strong>[ステータスバー(S)]</strong><br>
+	    ステータスバーの表示・非表示を切り替えます。<br>
+	    <br>
+	  <li><strong>[エディタ(E)]</strong>
+	    <ul>
+	      <li><strong>[行番号(L)]</strong><br>
+	      エディタの行番号の表示・非表示を切り替えます。<br>
+	      <br>
+	    <li><strong>[ルーラー(R)]</strong><br>
+	      エディタのカーソル桁位置を示すルーラーの表示・非表示を切り替えます。<br>
+	      <br>
+	    <li><strong>[水平スクロールバー(H)]</strong><br>
+	      エディタの水平スクロールバーの表示・非表示を切り替えます。<br>
+	      <br>
+	    </ul>
+	  <li><strong>[特殊文字(C)]</strong>
+	    <ul>
+	      <li><strong>[改行(R)]</strong>
+	       <li><strong>[ファイルの終わり(E)]</strong>
+	       <li><strong>[全角スペース(D)]</strong>
+	       <li><strong>[Tab] Ctrl+T</strong><br>
+	       通常は表示されない特殊文字の表示・非表示を切り替えます。<br>
+	       <br>
+	       <li><strong>[Tab幅を変更(C)] Shift+Ctrl+T</strong><br>
+	         Tab文字を表示するときの幅を変更します。設定は 2→4→6→8→ggg2... と順に切り替わります。
+	     </ul>
+	    <br>
+	  <li><strong>[メッセージウィンドウ(M)]</strong>
+	    <ul>
+	      <li><strong>[全体(M)] Shift+Ctrl+M</strong><br>
+	        コンパイルエラー等を表示するメッセージウィンドウの表示・非表示を切り替えます。<br>
+	        <br>
+	      <li><strong>[検索結果ウィンドウ(R)]</strong><br>
+	        検索結果ウィンドウをすべて閉じます。<br>
+	        <br>
+	      <li><strong>[水平スクロールバー(H)]</strong><br>
+	        メッセージウィンドウの水平スクロールバーの表示・非表示を切り替えます。<br>
+	        <br>
+	      <li><strong>[メッセージを消去(D)]</strong><br>
+	        メッセージウィンドウのメッセージをクリアします。<br>
+	        <br>
+	    </ul>
+	  <li><strong>[フラット(F)]</strong><br>
+	    フラットな外観に切り替えます。<br>
+	    <br>
+	  <li><strong>[MultiDocumentMode(X)]</strong><br>
+	    チェックがついていると複数ファイルを扱うモード(MultiDocumentMode)、
+	    外れているとひとつのファイルだけ開くモード(SingleDocumentMode)
+	    になります。SingleDocumentModeは既にサポートされません。
+	    CPadのいくつかの機能が使えなくなる場合がありますので、
+	    通常はチェックをつけたままで使用してください。<br>
+	    <br>
+	  <li><strong>[ファイラ(L)]</strong><br>
+	    CPadウィンドウ内にエクスプローラライクなファイラを表示します。
+	    起動時間が長くなるので、通常は非表示にしておいたほうがいいかもしれません。<br>
+	    また、環境によっては不都合が起こることがあるので、
+	    その場合は非表示にしておいてください。<br>
+	    エクスプローラからのドラッグ＆ドロップでもファイルを開くことができます。<br>
+	    <br>
+	  <li><strong>[右ページ(P)]</strong><br>
+	    新規ファイルを右側のエディタに開きます。<br>
+	    <br>
+	  <li><strong>[フォント(F)]</strong><br>
+	    [設定]ダイアログの[フォント]ページを表示します。
+	    エディタとメッセージウィンドウのフォントを指定します。<br>
+	    <br>
+	  <li><strong>[強調表示(E)] Shift+Ctrl+E</strong><br>
+	    キーワード強調表示のON/OFFを切り替えます。
+	    OFFの場合、一切の強調表示が行われなくなります。<br>
+	    <br>
+	  <li><strong>[現在の位置を標準に指定する(S)]</strong><br>
+	    現在のCPadウィンドウの位置を[標準位置]として記憶します。<br>
+	    [設定]ダイアログ-[その他]-[起動時のウィンドウ位置]が
+	    [標準に設定した位置]になっている場合のみこの設定は有効です。<br>
+	    <br>
+	</ul>
+  <a name="cpad_menu_exec">
+  <li><strong>[実行(R)]</strong>
+	<ul>
+	  <li><strong>[make＆実行(A)] F9</strong><br>
+	    ソースファイルと同じディレクトリに"makefile"があった場合、
+	    make を実行します。makeが完了すると
+	    生成された実行ファイルを実行します。<br>
+	    "makefile"が見つからなかった場合は[コンパイル＆実行(Z)]と
+	    同じ動作になります。<br>
+	    <br>
+	  <li><strong>[make] Ctrl+F9</strong><br>
+	    ソースファイルと同じディレクトリに"makefile"があった場合、
+	    make を実行します。<br>
+	    "makefile"が見つからなかった場合は[コンパイル(C)]と
+	    同じ動作になります。<br>
+	    <br>
+	  <li><strong>[実行（make依存）(F)] Ctrl+F9</strong><br>
+	    ソースファイルと同じディレクトリに"makefile"があった場合、
+	    make の結果生成される実行ファイルを実行します。<br>
+	    "makefile"が見つからなかった場合は[実行(R)]と
+	    同じ動作になります。<br>
+	    <br>
+	  <li><strong>[make時パラメータ(U)] Shift+Ctrl+F9</strong><br>
+	    makeを実行する際のパラメータを指定します。<br>
+	    <br>
+	  <li><strong>[コンパイル＆実行(Z)] F8</strong><br>
+	    編集中のソースファイルをコンパイルします。
+	    コンパイルが完了すると生成された実行ファイルを実行します。<br>
+	    <br>
+	  <li><strong>[コンパイル(C)] Ctrl+F8</strong><br>
+	    編集中のソースファイルをコンパイルします。<br>
+	    <br>
+	  <li><strong>[実行(R)] Shift+F8</strong><br>
+	    コンパイル済みの実行ファイルを実行します。<br>
+	    <br>
+	  <li><strong>[コンパイル時パラメータ(Y)] Shift+Ctrl+F8</strong><br>
+	    コンパイル時にコンパイラに渡すパラメータを指定します。<br>
+	    <br>
+	  <li><strong>[実行時パラメータ(P)] Shift+Ctrl+P</strong><br>
+	    [実行]時に実行ファイルに渡すパラメータを指定します。<br>
+	    <br>
+	  <li><strong>[コマンドプロンプトを起動(D)] Ctrl+Q</strong><br>
+	    コマンドプロンプトウィンドウを開きます。<br>
+	    <br>
+	  <li><strong>[エクスプローラを起動(E)] Ctrl+W</strong><br>
+	    エクスプローラを起動します。<br>
+	    <br>
+	  <li><strong>[コマンド入力(K)] Ctrl+F7</strong><br>
+	    [コマンドバー]にフォーカスを移します。<br>
+	    <br>
+	  <li><strong>[コマンドバー実行(X)] F7</strong><br>
+	    [コマンドバー]に表示されているコマンドを実行します。<br>
+	    <br>
+	  <li><strong>[Turbo Debugger 起動]</strong><br>
+	    [BCC版]<br>
+	    デバッガ「Borland Turbo Debugger」を起動します。<br>
+	    <br>
+	  <li><strong>[設定(S)]</strong><br>
+	    [設定]ダイアログを開きます。<br>
+	    <br>
+	</ul>
+  <a name="cpad_menu_search">
+  <li><strong>[検索(S)]</strong>
+	<ul>
+	  <li><strong>[検索(S)] Ctrl+F</strong><br>
+	    ソースファイル中の文字列を検索します。<br>
+	    <br>
+	  <li><strong>[下に向かって検索(N)] F3</strong><br>
+	    現在位置から下に向かって検索します。一度[検索]した後に有効になります。<br>
+	    <br>
+	  <li><strong>[上に向かって検索(P)] Shift+F3</strong><br>
+	    現在位置から上に向かって検索します。一度[検索]した後に有効になります。<br>
+	    <br>
+	  <li><strong>[置換(R)] Ctrl+R</strong><br>
+	    ソースファイル中の文字列を検索し、他の文字列に置き換えます。<br>
+	    <br>
+	  <li><strong>[インクリメンタルサーチ(I)] Ctrl+E</strong><br>
+	    キーベースのからのすばやい検索を行います。詳しくはこちら<br>
+	    <br>
+	  <li><strong>[関数一覧(F)] Ctrl+D</strong><br>
+	    編集中のソースコードの関数一覧を表示します。<br>
+	    <br>
+	  <li><strong>[指定行へジャンプ(J)] Ctrl+G</strong><br>
+	    指定行へジャンプします。<br>
+	    <br>
+	  <li><strong>[ファイル検索 Grep] Shift+Ctrl+G</strong><br>
+	    指定ディレクトリ中のファイルから、文字列を一括検索します。正規表現が使用できます。<br>
+	    <br>
+	</ul>
+  <a name="cpad_menu_window">
+  <li><strong>[ウィンドウ(W)]</strong>
+	<ul>
+	  <li><strong>[上下分割(V)] F11</strong><br>
+	    現在編集中のエディタを上下に分割します。ひとつのファイル中の
+	    別の個所を同時に参照できます。<br>
+	    分割のON/OFFを切り替えます。<br>
+	    <br>
+	  <li><strong>[左右分割(H)]</strong><br>
+	    現在編集中のエディタを左右に分割します。ひとつのファイル中の
+	    別の個所を同時に参照できます。<br>
+	    分割数に制限はありません。<br>
+	    分割したうちのひとつのエディタを閉じる場合は[ファイル]-[エディタを閉じる]<br>
+	    ひとつのファイルを参照しているエディタすべてを閉じる場合は[ファイル]-[ドキュメントを閉じる]<br>
+	    を選択します。
+	    <br>
+	  <li><strong>[右ページを閉じる(X)]</strong><br>
+	    画面右側にあるエディタをすべて閉じます。<br>
+	    <br>
+	  <li><strong>[右ページに移動(R)] Shift+Ctrl+R</strong><br>
+	    アクティブなエディタを画面右側に移動します。<br>
+	    ※左側には１つ以上のエディタが残っていなければなりません。<br>
+	    <br>
+	  <li><strong>[左ページに移動(L)] Shift+Ctrl+L</strong><br>
+	    アクティブなエディタを画面左側に移動します。<br>
+	    <br>
+	  <li><strong>[右へ移動(E)]</strong><br>
+	    アクティブなエディタのファイル名表示タブをひとつ右に移動します。<br>
+	    <br>
+	  <li><strong>[左へ移動(B)]</strong><br>
+	    アクティブなエディタのファイル名表示タブをひとつ左に移動します。<br>
+	    <br>
+	  <li><strong>[次のページを選択(N)] Ctrl+Tab</strong><br>
+	    タブ上でひとつ右のエディタに切り替えます。<br>
+	    <br>
+	  <li><strong>[前のページを選択(P)] Shift+Ctrl+Tab</strong><br>
+	    タブ上でひとつ左のエディタに切り替えます。<br>
+	    <br>
+	  <li><strong>[左右逆のエディタにフォーカス(S)] Alt+'→'</strong><br>
+	    右側のエディタページが開いている場合、反対側のエディタにフォーカスを移します。<br>
+	    <br>
+	  <li><strong>[上下逆のエディタにフォーカス(D)] Alt+'↓'</strong><br>
+	    アクティブなエディタが上下分割されている場合、上側・下側のフォーカス移動を行います。<br>
+	    <br>
+	  <li><strong>[メッセージウィンドウにフォーカス(M)] Alt+'↑'</strong><br>
+	    メッセージウィンドウが開いている場合、メッセージウィンドウにフォーカスを移します。<br>
+	    メッセージウィンドウにフォーカスがある場合はエディタウィンドウにフォーカスを移します。<br>
+	    <br>
+	</ul>
+  <a name="cpad_menu_tool">
+  <li><strong>[ツール(T)]</strong>
+	<ul>
+	  <li><strong>[ファイル履歴をクリア(R)]</strong><br>
+	    [ファイル(F)]-[最近開いたファイル(R)]の履歴を消去します。<br>
+	    <br>
+	  <li><strong>[設定ファイル bcc32.cfg を編集]</strong><br>
+	    [BCC版]<br>
+	    bcc32.exe の設定ファイルである bcc32.cfg をエディタで開きます。<br>
+	    <br>
+	  <li><strong>[設定ファイル ilink32.cfg を編集]</strong><br>
+	    [BCC版]<br>
+	    ilink32.exe の設定ファイルである ilink32.cfg をエディタで開きます。<br>
+	    <br>
+	  <li><strong>[設定ファイル _LCC を編集]</strong><br>
+	    [LSIC版]<br>
+	    LSI C-86の設定ファイルである _LCC をエディタで開きます。<br>
+	    <br>
+	</ul>
+  <a name="cpad_menu_help">
+  <li><strong>[ヘルプ(H)]</strong>
+	<ul>
+	  <li><strong>[ヘルプ(H)] F1</strong><br>
+	    [設定]ダイアログ-[基本設定]-[ヘルプ]で指定したヘルプファイルを開きます。<br>
+	    <br>
+	  <li><strong>[CPadのヘルプ(HTML)(X)] F1</strong><br>
+	    CPadのヘルプ（このファイル）を表示します。<br>
+	    <br>
+	  <li><strong>[LSI C-86 マニュアルビューア(L)]</strong><br>
+	    [BCC版/LSIC版]<br>
+	    [LSI C-86 マニュアルビューア]を開きます。詳しくはこちら<br>
+	    <br>
+	  <li><strong>[Readmeファイルを表示(C)]</strong><br>
+	    CPadの readme_<b>x</b>cpad.txt ファイルを開きます。<br>
+	    <br>
+	  <li><strong>[バージョン情報(A)]</strong><br>
+	    実行中の CPad のバージョン情報を表示します。<br>
+	    <br>
+	</ul>
+</ul>
+<p align="right"><a href="cpad_side.html" target="cpad_manual_side">Index</a></p>
+</body>
+</html>

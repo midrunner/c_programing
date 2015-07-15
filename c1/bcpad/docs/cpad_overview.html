@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=shift_jis">
+<title>CPad Suite 共通マニュアル</title>
+</head>
+<body>
+<a name="cpad_overview">
+<p align="right"><a href="cpad_side.html" target="cpad_manual_side">Index</a></p>
+<h2>概要</h2>
+</a>CPad は <strong>C/C++, Java, Fortran, Pascel, C#</strong> のプログラミングを支援する、
+GUI開発環境です。<br>
+<br>
+簡単に「コンパイル」＆「実行」ができるので、プログラミング初心者の学習用途はもちろん、
+ちょっとしたテストコードの実行に手間をかけたくない中上級者にとっても有用なツールとなっています。<br>
+<br>
+BCC版CPadのスクリーンショット<br>
+<img src="images/bcpad223.png" alt="CPadスクリーンショット" width="600" height="580" border="0" vspace="1" hspace="1">
+<br>
+<br>
+<br>
+
+<a name="cpad_targetcompiler">
+<h2>対応コンパイラ</h2>
+現在、以下の CPad を公開しています。(CPad Suite)<br>
+<ul>
+  <li><strong>C/C++開発環境 CPad for Borland C++Compiler </strong>(以下 BCPad または BCC版)<br>
+  Borland社のC++コンパイラ「Borland C++ Compiler」に対応します。<br>
+  「Borland C++ Builder」付属のコンパイラを使用することもできます。<br>
+  <br>
+  <li><strong>Java開発環境 CPad for Java2 SDK </strong>(以下 JCPad または Java版)<br>
+  Sun Microsystems社の「Java2 SDK Standard Edition」に対応します。<br>
+  <br>
+  <li><strong>C言語開発環境 CPad for LSI C-86 </strong>(以下 LCPad または LSIC版)<br>
+  LSI Japan社提供のCコンパイラ「LSI C-86 試食版」に対応します。<br>
+  <br>
+  <li><strong>Fortran開発環境 CPad for Salford FTN77 </strong>(以下 FCPad)<br>
+  英Salford Software社の「Salford FTN77 Personal Edition」に対応します。<br>
+  <br>
+  <li><strong>Pascal開発環境 CPad for Free Pascal </strong>(以下 PCPad)<br>
+  フリーのObject Pascalコンパイラ「Free Pascal Compiler」に対応します。<br>
+  また、Borland社の「Borland Delphi」付属のコンパイラを使用することもできます。<br>  
+  <br>
+  <li><strong>C#開発環境 CPad for C# .NET </strong>(以下 C#版 または SCCPad)<br>
+  Microsoft社の「.NET Framework SDK」に含まれるC#コンパイラに対応します。<br>
+</ul>
+カスタマイズ可能な仕様になっているため、上記以外のコンパイラにも設定により対応することができます。<br>
+例）Visual C++, GNU Fortran等でも動作したようです。<br>
+<br>
+<br>
+
+<a name="cpad_feature">
+<h2>特長</h2>
+<ul>
+  <li><strong>使いやすいGUI環境</strong><br>
+  GUI環境のため、コマンドラインを意識せずにコンパイル、実行が可能です。<br>
+  <br>
+  <li><strong>コンパイル環境の自動構築</strong><br>
+  コンパイル時にパス・環境変数を設定してからコンパイラを起動します。<br>
+  autoexec.bat 等のシステムファイルを書き換える必要がありません。<br>
+  <br>
+  <li><strong>設定ファイル自動設定</strong><br>
+  [BCC版/LSIC版のみ]<br>
+  コンパイラの設定ファイルをインストール環境に合わせて自動で設定します。<br>
+  <br>
+  <li><strong>見やすい構文強調表示</strong><br>
+  ソースコード中の文字列、コメント、各言語キーワードをカラーで表示します。キーワードはカスタマイズできます。<br><br>
+  <li><strong>エラーを表示するメッセージウィンドウ</strong><br>
+  ダブルクリックでエラー行へジャンプできます。<br>
+  標準のコンパイラ出力の他、make/ant等コンパイル支援ツールやその他ツールの出力を取り込むことができます。<br>
+  <br>
+  <li><strong>柔軟な実行時ウィンドウ制御</strong><br>
+  実行時にコマンドプロンプトの開閉を制御できます。<br>
+  標準では "Press any key to exit" と表示して停止します。 <br>
+  ウィンドウが閉じないので実行結果を確認でき、確認後はキーひとつでウィンドウを閉じることができます。<br>
+  <br>
+  <li><strong>自動バックアップ</strong><br>
+  自動的に10世代前までのバックアップを取ります。<br>
+  <br>
+  <li><strong>文字コード自動判別</strong><br>
+  Shift-JIS/EUC-JP/JIS等の日本語文字コードを自動判別して開きます。UNIX上で作成したファイルも直接編集できます。<br>
+  <br>
+  <li><strong>LSI C-86 マニュアルビューア</strong><br>
+  [BCC版/LSIC版のみ]<br>
+  テキスト版のLSI C-86 付属のユーザーズマニュアルを見やすくするビューアが付属します。ハイパーリンク・検索機能などがあります。<br>
+  フリー版の Borland C++ Compiler には日本語のライブラリヘルプが付属していませんが、標準Cライブラリに関してはこのマニュアルビューアで代用することができます。<br>
+  <br>
+  <li><strong>Turbo Debugger 起動</strong><br>
+  [BCC版のみ]<br>
+  Borland社提供のデバッガ Borland Turbo Debugger をメニューから起動できます。<br>
+  <br>
+  <li><strong>任意コマンド実行機能</strong><br>
+  任意コマンドを任意ディレクトリで実行できる「コマンドバー」を搭載。これにより各種支援ツールの使用、及び連携を妨げない柔軟な環境になっています。<br>
+  出力結果を取り込むこともできます。<br>
+  <br>
+</ul>
+<br>
+<br>
+
+<a name="cpad_targetos">
+<h2>対応環境</h2>
+Windows 95/98/ME/NT4.0/2000<br>
+<br>
+※使用するコンパイラによっては特定環境で動作しない場合があります。<br>
+<br>
+<br>
+
+<p align="right"><a href="cpad_side.html" target="cpad_manual_side">Index</a></p>
+</body>
+</html>

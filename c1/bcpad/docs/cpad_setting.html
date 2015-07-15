@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=shift_jis">
+<title>CPad Suite 共通マニュアル</title>
+</head>
+<body>
+<p align="right"><a href="cpad_side.html" target="cpad_manual_side">Index</a></p>
+<h2>設定ダイアログ説明</h2>
+<ul>
+  <a name="cpad_setting_base">
+  <li><h3>[基本設定]ページ</h3>
+    <blockquote>
+      <strong>[コンパイラのパス(W)]</strong><br>
+      使用するコンパイラのフルパスを指定します。<br>
+      [BCC版/LSIC版]の場合、左の[参照(F)]を押して指定したときは設定ファイルの自動設定をします。<br>
+      <br>
+      <strong>[設定ファイル自動設定(A)]</strong><br>
+      [BCC版/LSIC版]コンパイラのパス指定時に[参照]ボタンを使わずに手で入力した場合は
+      このボタンをクリックして自動設定を始めます。<br>
+      <br>
+      <strong>[ヘルプファイルのパス(H)]</strong><br>
+      [ヘルプ(H)]-[ヘルプ(H) F1]メニューで開くヘルプのフルパスを指定します。
+      拡張子 hlp, html, chm, txt 等のファイルが指定できます。<br>
+      <br>
+      <strong>[標準のデータ保存フォルダ(D)]</strong><br>
+      通常ソースファイルを保存するディレクトリを指定します。<br>
+      ここで指定したフォルダが[ファイルを開く]等のデフォルトになります。<br>
+      <br>
+      <strong>[ファイル保存時に自動的にバックアップをとる(E)]</strong><br>
+      自動バックアップ機能を使うかどうかを指定します。10世代固定です。<br>
+      <br>
+      <strong>[バックアップフォルダ(B)]</strong><br>
+      自動バックアップ機能を使う場合、バックアップファイルを保存するフォルダを指定します。<br>
+      デフォルトではCPadをインストールしたフォルダのなかの Backup というフォルダになっています。<br>
+      <br>
+    </blockquote>    
+  <a name="cpad_setting_keywords">
+  <li><h3>[キーワード]ページ</h3>
+    <blockquote>
+      <strong>[グループ]</strong><br>
+      キーワードは属するグループ別に表示色を指定します。既に存在するグループの一覧です。<br>
+      チェックするとグループのキーワードのフォントがが太字になります。<br>
+      <br>
+      <strong>[キーワード一覧]</strong><br>
+      選択中のグループのキーワード一覧です。実際のフォントの色・背景色設定が反映されます。<br>
+      個々のキーワードの変更・追加はここで行います。<br>
+      <br>
+      <strong>[色変更(C)]</strong><br><br>
+      選択中のグループのキーワードの色指定を行います。<br>
+      <br>
+    </blockquote>    
+  <a name="cpad_setting_view">
+  <li><h3>[表示]ページ</h3>
+    <blockquote>
+      <strong>[特殊文字の表示]</strong><br>
+      特殊文字の表示・非表示を切り替えます。<br>
+      <br>
+      <strong>[タブ幅]</strong><br>
+      タブ幅をスペースの個数で指定します。2/4/6/8の中から選択します。<br>
+      <br>
+      <strong>[フリーキャレット(F)]</strong><br>
+      フリーキャレットモードのON/OFFを切り替えます。デフォルトはOFFです。<br>
+      <br>
+      <strong>[半角スペースでインデント(S)]</strong><br>
+      ONにすると、Tabキーを押したときにTab文字ではなく半角スペースが挿入されます。<br>
+      <br>
+      <strong>[拡張オートインデント(A)]</strong><br>
+      [BCC版/Java版/LSIC版/C#版]<br>
+      "{"の場所で[Enter]キーを押した場合に自動的にインデントをするかどうかを指定します。<br>
+      また、"}"を入力すると対応する"{"を探してアンインデントします。<br>
+      <br>
+      <strong>[ドキュメントコメント入力支援(D)]</strong><br>
+      [BCC版/Java版/LSIC版]<br>
+      ドキュメンテーションコメント /** ... */ の入力支援をするかどうかを指定します。<br>
+      <br>
+      <strong>[強調表示(E)]</strong><br>
+      キーワード・文字列・コメントの強調表示をするかどうかを指定します。<br>
+      <br>
+      <strong>[//以降をコメントと解釈(C)]</strong><br>
+      [BCC版]<br>
+      //以降をコメントと解釈するかどうかを指定します。<br>
+      <br>
+      <strong>[文字列の色]</strong><br>
+      文字列の色を指定します。<br>
+      <br>
+      <strong>[コメントの色]</strong><br>
+      コメントの色を指定します。<br>
+      <br>
+      <strong>[2-5桁目の色]</strong><br>
+      [Fortran版]<br>
+      2-5桁目の文字色を指定します。<br>
+      <br>
+      <strong>[6桁目の色]</strong><br>
+      [Fortran版]<br>
+      6桁目の文字色と背景色を指定します。<br>
+      <br>
+      <strong>[73桁目以降の色]</strong><br>
+      [Fortran版]<br>
+      73桁目以降の文字色を指定します。<br>
+      <br>
+    </blockquote>    
+  <a name="cpad_setting_font">
+  <li><h3>[フォント]ページ</h3>
+    <blockquote>
+      <strong>[エディタフォント]</strong><br>
+      エディタのフォントを指定します。<br>
+      <br>
+      <strong>[メッセージのフォント]</strong><br>
+      メッセージウィンドウ・ファイル検索結果ウィンドウのフォントを指定します。<br>
+      <br>
+      <strong>[文字色]</strong><br>
+      文字色を指定します。<br>
+      <br>
+      <strong>[背景色]</strong><br>
+      背景色を指定します。<br>
+      <br>
+      <strong>[選択領域の文字色]</strong><br>
+      選択領域の文字色を指定します。<br>
+      <br>
+      <strong>[選択領域の背景色]</strong><br>
+      選択領域の背景色を指定します。<br>
+      <br>
+      <strong>[改行マークの色]</strong><br>
+      改行マーク・[EOF]マーク・Tabマーク・全角空白を表示する場合の色を指定します。<br>
+      <br>
+      <strong>[標準の色設定に戻す]</strong><br>
+      CPadデフォルト（インストール時）の色指定に戻します。<br>
+      <br>
+    </blockquote>    
+  <a name="cpad_setting_exec">
+  <li><h3>[実行]ページ</h3>
+    <blockquote>
+      <strong>[実行時パラメータ]</strong><br>
+      実行時、実行ファイルに渡すパラメータを指定します。<br>
+      <br>
+      <strong>[コンパイル時パラメータ(P)]</strong><br>
+      コンパイル時にコンパイラに渡すパラメータを指定します。<br>
+      <br>
+      <strong>[make時パラメータ]</strong><br>
+      make時、makeに渡すパラメータを指定します。<br>
+      <br>
+      <strong>[実行時のウィンドウ制御(V)]</strong><br>
+      実行時、コンソールウィンドウの制御を行うかどうかを指定します。<br>
+      <br>
+      <strong>[コンパイル・make時に自動的に上書き保存する(S)]</strong><br>
+      コンパイル時・自動的に上書き保存するかどうかを指定します。<br>
+      <br>
+      <strong>[自動保存時に確認する(F)]</strong><br>
+      上記上書き保存時に確認ダイアログを表示するかどうかを指定します。デフォルトはOFFです。<br>
+      <br>
+      <strong>[コンパイルスキップを有効にする(K)]</strong><br>
+      [コンパイルスキップ]機能を使うかどうかを指定します。<br>
+      ONの場合、[コンパイル＆実行]時に、ソースコードが変更されていない場合は[実行]のみ行います。<br>
+      <br>
+      <strong>[MAKEFILEが見つからないときにコンパイルを実行する(C)]</strong><br>
+      デフォルトでONです。<br>
+      [実行]-[make＆実行]時に、makefileが見つからないと[実行]-[コンパイル＆実行]になります。<br>
+      <br>
+      <strong>[標準のデータフォルダでも makefile を探す(F)]</strong><br>
+      デフォルトでOFFです。<br>
+      OFFの場合、[標準のデータフォルダ]で指定したフォルダにあるファイルに対してはmake動作を行いません。<br>
+      makeを使用する場合は専用のフォルダを作成して、その中にファイル一式を保存してください。<br>
+      <br>
+    </blockquote>    
+  <a name="cpad_setting_misc">
+  <li><h3>[その他]ページ</h3>
+    <blockquote>
+      <strong>[VMコマンド(V)]</strong><br>
+      [Java版]<br>
+      実行時VMを表すコマンドを指定します。デフォルトは"java"です。<br>
+      例えば jview と指定することで、Microsoft製のJavaVMを使って実行することガできます。<br>
+      <br>
+      <strong>[VMパラメータ(P)]</strong><br>
+      [Java版]<br>
+      実行時VMに渡すパラメータを指定します。<br>
+      -classic などが指定できます。<br>
+      <br>
+      <strong>[LSI C-86 ユーザーズマニュアル "LSIC86.MAN"(M)]</strong><br>
+      [BCC版/LSIC86版]<br>
+      LSI C-86のユーザーズマニュアル"LSIC86.MAN"のフルパスを指定します。<br>
+      LSI C-86 マニュアルビューアを利用する際に必要です。<br>
+      <br>
+      <strong>[ソースファイルディレクトリ(S)]</strong><br>
+      [Java版]<br>
+      ソースファイルを配置するディレクトリを指定します。デフォルトは&quot;src&quot;です。<br>
+      ソースファイルの位置・またはPackageのルートディレクトリがソースファイルディレクトリ名と一致した場合、
+      次の[出力ディレクトリ]がこのディレクトリと同じ階層になります。<br>
+      <br>
+      <strong>[出力ディレクトリ(O)]</strong><br>
+      [Java版]<br>
+      コンパイルした .classファイルを出力するディレクトリを指定します。デフォルトは&quot;build&quot;です。<br>
+      相対パスまたは絶対パスが指定できます。<br>
+      また、[コンパイル時パラメータ]に -d オプションが指定されている場合はそちらが優先されます。<br>
+      <br>
+      <strong>[Package対応(N)]</strong><br>
+      [Java版]<br>
+      Packageに対応したコンパイル・実行を行います。デフォルトはONです。<br>
+      <br>
+      <strong>[常に出力ディレクトリを使う(W)]</strong><br>
+      [Java版]<br>
+      デフォルトでOFFです。<br>
+      OFFの場合、package文のないソースファイルで、
+      且つ[ソースファイルディレクトリ]に位置していない場合は出力ディレクトリを
+      指定せずにコンパイルを行います。<br>
+      ONの場合はこの場合でも -d オプションで出力ディレクトリを指定できます。<br>
+      Javaに慣れたら、ソースファイルと生成ファイルは分ける意味でONにすることが望ましいです。<br>
+      <br>
+      <strong>[起動時のウィンドウ位置(W)]</strong><br>
+      起動時のウィンドウ位置を指定します。<br>
+      [標準に指定した位置]の場合、[表示]-[現在の位置を標準に設定する]メニュー
+      によって指定したウィンドウ位置で毎回起動します。<br>
+      <br>
+    </blockquote>    
+  <a name="cpad_setting_env">
+  <li><h3>[高度な設定]ページ</h3>
+    <blockquote>
+      <strong>[以下の設定を変更する(C)]</strong><br>
+      [追加する環境変数][追加するパス][追加するコマンド]を変更する場合はチェックします。<br>
+      <br>
+      <strong>[追加する環境変数(E)]</strong><br>
+      追加したい環境変数を指定します。<br>
+      <blockquote>
+        <code>&lt;環境変数&gt;=&lt;値&gt;</code><br>
+      </blockquote>
+      の形式で指定します。また、 %VARIABLE% の形で、既に定義済みの環境変数を参照することもできます。<br>
+      <br>
+      例:
+      <blockquote>
+        <pre>
+JAVA_HOME=D:\usr\java\jdk1.3.0_02
+ANT_HOME=D:\usr\jakarta\ant\jakarta-ant-1.3
+TOMCAT_HOME=D:\usr\tomcat\jakarta-tomcat-3.2.1
+
+CLASSPATH=.;%TOMCAT_HOME%\lib\servlet.jar;%CLASSPATH%
+
+CLASSPATH=.;D:\usr\local\lib\relaxer\xerces.jar;%CLASSPATH%
+</pre>
+      </blockquote>
+      
+      <br>
+      <strong>[追加するパス(P)]</strong><br>
+      追加したいパス（環境変数PATHに含めるパス）を指定します。<br>
+      複数指定する場合は改行で区切ります。<br>
+      実行時、自動的に短いファイル名に変換されるので、ロングファイル名のまま記述してください。<br>
+      
+      <br>
+      [設定]-[基本設定]-[コンパイラ]で指定してあるパスは自動的に追加されます。<br>
+      既に定義してある環境変数を %VARIABLE% の形で参照することもできます。<br>
+       <br>
+       例:
+      <blockquote>
+        <pre>
+D:\usr\local\bin
+D:\Program Files\Borland\Delphi5\bin
+
+%ANT_HOME%\bin
+%TOMCAT_HOME%bin
+</pre>
+      </blockquote>
+      
+      <br>
+      <strong>[実行するコマンド(B)]</strong><br>
+      [実行]-[実行]時に実行ファイルを実行する前に実行するコマンドを指定します。<br>
+      <br>
+      例えばWin98では、 <code>doskey</code> を指定すると、コマンド履歴が使えるようになります。<br>
+      <br>
+      また、LSI C-86は、Windows2000/NT4/XPでの実行に問題があるので、<br>
+      <br>
+      <blockquote>
+      <code> %WINDIR%\system32\command.com /c exit > nul</code><br>
+      </blockquote>
+      というコマンドを実行しておく必要があります。<br>
+      こうすることで管理者ユーザーであれば実行することができます。<br>
+      <br>
+      ※管理者ユーザーでない場合は実行できないことがあるので、
+      LSI C-86でなく、Borland C++ Compilerを使用することをお勧めします。<br>
+      <br>
+    </blockquote>    
+</ul>
+<br>
+<br>
+<br>
+<p align="right"><a href="cpad_side.html" target="cpad_manual_side">Index</a></p>
+</body>
+</html>

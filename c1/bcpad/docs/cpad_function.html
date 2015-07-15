@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=shift_jis">
+<title>CPad Suite 共通マニュアル</title>
+</head>
+<body>
+<p align="right"><a href="cpad_side.html" target="cpad_manual_side">Index</a></p>
+<h2>便利な機能</h2>
+
+CPadの便利な機能や、独自の機能を紹介します。
+
+<blockquote>
+<h3>[F9]キー</h3>
+ほとんどの場合はこのキーだけで操作できます。<br>
+[make＆実行]メニューに割り当てられていますが、ソースファイルのディレクトリに 
+makefile が見つからない場合はコンパイルを始めるので、
+[コンパイル＆実行]と同様に使えます。<br>
+ソースファイルをコンパイルし、コンパイル後実行するまでがこのキーひとつで可能です。<br>
+<br>
+make関連メニューはすべて、上のように makefile が見つからない場合には
+コンパイル動作に移行します。<br>
+また、標準では [標準のデータフォルダ] で makefile を探しません。<br>
+<br>
+<font color="red">
+※make実行時の実行ファイル名はmakefileから自動抽出するようになっていますが、
+失敗することもあります。<br>
+makefile中に<br>
+<code>#target: hello.exe</code><br>
+のように生成されるexeファイルをコメントとして記述しておくと確実に
+実行ファイル名を取得することができます。
+</font>
+
+</blockquote>
+
+<hr>
+
+<blockquote>
+<h3>[実行]時にウィンドウが開いた状態で停止</h3>
+実行ファイルを実行したとき、
+<blockquote>
+<code>Press any key to exit (Input "c" to continue) </code>
+</blockquote>
+と表示して停止します。<br>
+終了後もウィンドウが開いたままなので実行結果を確認できます。<br>
+ここで "c"を押すとそのままコマンド入力ができ、その他のキーを押すと
+ウィンドウが閉じます。<br>
+<br>
+なにより、ソース中に <code>getchar()</code> などの本来の処理とは
+全く関係のないコードを入れる必要がなくなります。
+</blockquote>
+
+<hr>
+
+<blockquote>
+<h3>LSI C-86マニュアルビューア</h3>
+[BCC版/LSIC版のみ]<br>
+[ヘルプ]-[LSI C-86マニュアルビューア]メニュー（[Ctrl+F1]キー）<br>
+<br>
+Cの関数ヘルプを見ることができます。
+ハイパーリンク・検索機能は非常に便利です。<br>
+フリー版のBCCにはライブラリヘルプが付属していませんが、C言語のライブラリに
+関してはLSI C-86のものを利用することができます。<br>
+ただし、LSI C-86以外のコンパイラでは若干ライブラリ仕様に違いがあります。
+
+</blockquote>
+
+<hr>
+
+<blockquote>
+<h3>Tab文字の表示・非表示／Tab幅を変更</h3>
+それぞれ<br>
+[Ctrl+T]キー（[表示]-[特殊文字]-[Tab]メニュー）<br>
+[Shift+Ctrl+T]キー（[表示]-[特殊文字]-[Tab幅を変更]メニュー）<br>
+に割り当てられています。<br>
+<br>
+タブとスペースが混在したソースファイルを見る・編集するときに役に立ちます。<br>
+<br>
+
+</blockquote>
+
+<hr>
+
+<blockquote>
+<h3>インクリメンタルサーチ</h3>
+[検索]-[インクリメンタルサーチ]メニュー（[Ctrl+E]キー）<br>
+<br>
+DelphiやJBuilder等ののBorland製IDEのコードエディタに
+実装されている検索方法で、素早い検索が可能です。<br>
+使い方の例：
+<blockquote>
+<pre>
+a
+ab
+abc
+abcd
+</pre>
+</blockquote>
+という文字の最初の行にカーソルを置いて、Ctrl+E のあと、"abcd"と一文字ずつ
+入力すると使い方がわかります。その後[BackSpace]も押してみてください。<br>
+[Esc]キーやカーソルキーで検索を解除します。<br>
+[F3]キーで次の語を検索します。<br>
+
+
+</blockquote>
+
+<hr>
+
+<blockquote>
+<h3>環境変数を設定した状態でコマンドプロンプトを起動</h3>
+"autoexec.bat"等のシステムファイルや、レジストリを書き換えることなく、
+環境変数・パスをを設定した状態でコマンドプロンプトを起動します。<br>
+コマンドラインからコマンドラインツールを
+利用することができます。<br>
+<br>
+また、環境変数は自由に設定することもできます。<br>
+設定には、定義済み環境変数を変数によって参照することもでき、
+パスは自動的に短いファイル名に変換します。<br>
+参照:<br>
+[設定]ダイアログ-[高度な設定]-[追加する環境変数]<br>
+[設定]ダイアログ-[高度な設定]-[追加するパス]<br>
+<br>
+
+</blockquote>
+
+<hr>
+
+<blockquote>
+<h3>C/C++関数一覧</h3>
+[BCC版/LSIC版のみ]<br>
+[検索]-[関数一覧]メニュー（[Ctrl+D]キー）<br>
+<br>
+編集中のソースコード中の関数の一覧を表示します。その中から指定した関数の
+定義位置にジャンプすることができます。
+
+</blockquote>
+
+<hr>
+
+<blockquote>
+<h3>文字コード自動認識</h3>
+ファイルを開くときに、自動的に文字コードを判定して開きます。<br>
+読み込み時にはファイルごと変換して変換後のファイルを開きます。<br>
+<b>元のファイルは"source.original.cpp"などのファイル名でバックアップされます。</b><br>
+<br>
+[ファイル]-[文字コードを指定して保存]メニューで保存します。<br>
+文字コード EUC, 改行コード LF 
+で保存するとUNIX上でそのまま扱うことができます。<br>
+
+</blockquote>
+
+<hr>
+
+<blockquote>
+<h3>[標準のデータ保存フォルダ]</h3>
+ファイルを開くときや名前を付けて保存するとき、
+最初に表示されるフォルダを指定します。<br>
+
+</blockquote>
+
+<hr>
+
+<blockquote>
+<h3>現在の位置を標準に設定</h3>
+[表示]-[現在の位置を標準に設定]メニュー<br>
+<br>
+[設定]ダイアログ-[表示]-[起動時のウィンドウ位置]の<br>
+[標準に設定した位置(G)]にチェックをつけた場合、
+起動時に表示される位置を設定します。<br>
+<br>
+
+</blockquote>
+
+<hr>
+
+<a name="cpad_function_commandbar">
+<blockquote>
+<h3>コマンドバー</h3>
+[実行]-[コマンド入力]メニュー（[Ctrl+F7]キー）<br>
+[実行]-[コマンドバー実行]メニュー（[F7]キー）<br>
+<br>
+CPad上から、任意ディレクトリで任意のコマンドを実行することができます。<br>
+これによって外部のツールとの連携が可能になります。<br>
+<br>
+<blockquote>
+<h4>使い方</h4>
+[Alt+C]または[Ctrl+F7]キーでコマンドバーにフォーカスを移します。<br>
+ディレクトリとコマンドを以下の形式に従って入力し、[Enter]キーを押します。<br>
+コマンドバーにコマンドが入力されている状態で[F7]キーを押すと、すぐに実行を始めます。<br>
+また、ディレクトリ指定は絶対パス・相対パスともに有効です。<br>
+<br>
+ディレクトリ指定をするときは @ .. &gt; でディレクトリを囲みます。<br>
+出力を取り込むときは先頭に &gt; を付加します。<br>
+GUIプログラムを実行するときは先頭に ! を付加します。<br>
+実行したプログラムの終了待ちをするときは先頭に # を付加します。<br>
+<br>
+以下に8通りの組み合わせの例を挙げます。<br>
+Webページ上でも使い方の具体例を取り上げていく予定です。是非お越しください。<br>
+<br>
+<hr>
+<b>1.</b><br>
+ソースファイルのあるディレクトリでコマンドプロンプトを開いて実行する。<br>
+<blockquote>
+<pre>
+<em>コマンド</em>
+</pre>
+</blockquote>
+例:
+<blockquote>
+<pre>
+dir
+</pre>
+</blockquote>
+<br>
+<hr>
+<b>2.</b><br>
+ソースファイルのあるディレクトリでコマンドを実行し、その出力を取り込んでメッセージウィンドウに表示する。<br>
+<blockquote>
+<pre>
+&gt;<em>コマンド</em>
+</pre>
+</blockquote>
+例:
+<blockquote>
+<pre>
+&gt;dir
+&gt;set
+</pre>
+</blockquote>
+<br>
+
+<hr>
+<b>3.</b><br>
+ソースファイルのあるディレクトリでコマンドプロンプトを表示せずにGUIプログラムを実行する。<br>
+<blockquote>
+<pre>
+!<em>コマンド</em>
+</pre>
+</blockquote>
+例:
+<blockquote>
+<pre>
+!winver
+!notepad
+</pre>
+</blockquote>
+<br>
+
+<hr>
+<b>4.</b><br>
+ソースファイルのあるディレクトリでプログラムを実行し、そのプログラムが終了したときに
+&quot;Press any key to continue.&quot;と表示する。<br>
+<blockquote>
+<pre>
+#<em>コマンド</em>
+</pre>
+</blockquote>
+例:
+<blockquote>
+<pre>
+#dir
+#winver
+</pre>
+</blockquote>
+<br>
+
+<hr><b>5.</b><br>
+ディレクトリを指定して、コマンドプロンプトを開いて実行する。<br>
+<blockquote>
+<pre>
+@<em>ディレクトリ</em>&gt;<em>コマンド</em>
+</pre>
+</blockquote>
+例:
+<blockquote>
+<pre>
+（2階層上のディレクトリで dir ）
+@..\..&gt;dir
+
+（C:\Program Files で dir）
+@C:\Program Files&gt;dir
+</pre>
+</blockquote>
+<br>
+
+<hr>
+<b>6.</b><br>
+指定したディレクトリでコマンドを実行し、その出力を取り込んでメッセージウィンドウに表示する。<br>
+<blockquote>
+<pre>
+&gt;@<em>ディレクトリ</em>&gt;<em>コマンド</em>
+</pre>
+</blockquote>
+例:
+<blockquote>
+<pre>
+（..\..\src のディレクトリで make 実行。出力を取り込む）
+&gt;@..\..\src&gt;make
+
+（C:\Documents and Setting で dir 実行。出力を取り込むs）
+&gt;@C:\Document and Settings&gt;dir
+
+（3階層上のディレクトリで ant 実行。出力を取り込む。）
+&gt;@..\..\..&gt;ant
+</pre>
+</blockquote>
+<br>
+<hr>
+<b>7.</b><br>
+指定したディレクトリでコマンドプロンプトを表示せずにGUIプログラムを実行する。<br>
+<blockquote>
+<pre>
+!@<em>ディレクトリ</em>&gt;<em>コマンド</em>
+</pre>
+</blockquote>
+例:
+<blockquote>
+<pre>
+!@subdir&gt;winver
+!@C:\Document and Settings&gt;notepad
+</pre>
+</blockquote>
+<br>
+<hr>
+<b>8.</b><br>
+指定したディレクトリでプログラムを実行し、そのプログラムが終了したときに
+&quot;Press any key to continue.&quot;と表示する。<br>
+<blockquote>
+<pre>
+#@<em>ディレクトリ</em>&gt;<em>コマンド</em>
+</pre>
+</blockquote>
+例:
+<blockquote>
+<pre>
+#@..&gt;dir
+#@C:\Document and Settings&gt;dir</pre>
+</blockquote>
+<br>
+
+</blockquote>
+
+</blockquote>
+
+<hr>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<p align="right"><a href="cpad_side.html" target="cpad_manual_side">Index</a></p>
+
+</body>
+</html>
